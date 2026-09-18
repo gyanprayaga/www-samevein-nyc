@@ -83,6 +83,7 @@ export function isSiteContentShape(value: unknown): value is SiteContent {
     Array.isArray(body.shows) &&
     typeof body.bookingEmail === "string" &&
     typeof body.homeNote === "string" &&
+    typeof body.instagram === "string" &&
     typeof body.youtube === "string" &&
     typeof body.spotify === "string" &&
     typeof body.soundcloud === "string"

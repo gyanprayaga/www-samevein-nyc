@@ -101,6 +101,15 @@ export function AdminEditor({ initial }: { initial: SiteContent }) {
         />
       </label>
       <label>
+        Instagram
+        <input
+          value={content.instagram}
+          onChange={(e) =>
+            setContent({ ...content, instagram: e.target.value })
+          }
+        />
+      </label>
+      <label>
         SoundCloud
         <input
           value={content.soundcloud}

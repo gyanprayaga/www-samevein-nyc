@@ -25,6 +25,7 @@ export type SiteContent = {
   bookingEmail: string;
   ticker: string[];
   homeNote: string;
+  instagram: string;
   youtube: string;
   spotify: string;
   soundcloud: string;
