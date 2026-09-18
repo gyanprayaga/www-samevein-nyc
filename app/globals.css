@@ -57,7 +57,7 @@ body {
 
 .header {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 24px;
   padding: 70px 64px 24px;
   flex-wrap: wrap;
@@ -68,6 +68,12 @@ body {
   line-height: 1;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.header-ig {
+  font-size: var(--copy);
+  align-self: center;
+  text-underline-offset: 4px;
 }
 
 .main {

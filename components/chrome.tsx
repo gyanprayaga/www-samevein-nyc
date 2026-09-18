@@ -10,9 +10,16 @@ const DOCK = [
   { href: "/shows", label: "SHOWS" },
 ] as const;
 
-export function Chrome({ children }: { children: ReactNode }) {
+export function Chrome({
+  instagram,
+  children,
+}: {
+  instagram: string;
+  children: ReactNode;
+}) {
   const pathname = usePathname() || "/";
   const merch = pathname === "/merch";
+  const ig = instagram.trim();
 
   return (
     <div className={merch ? "shell shell--merch" : "shell"}>
@@ -23,6 +30,16 @@ export function Chrome({ children }: { children: ReactNode }) {
         <Link className="wordmark" href="/">
           same vein
         </Link>
+        {ig ? (
+          <a
+            className="header-ig"
+            href={ig}
+            rel="noreferrer"
+            target="_blank"
+          >
+            instagram
+          </a>
+        ) : null}
       </header>
       <main id="content" className="main">
         {children}

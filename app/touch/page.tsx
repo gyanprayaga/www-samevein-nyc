@@ -6,16 +6,22 @@ export const metadata = { title: "Be in touch" };
 
 export default async function TouchPage() {
   const content = await getContent();
+  const instagram = content.instagram.trim();
   const youtube = content.youtube.trim();
   const spotify = content.spotify.trim();
-  const hasListen = Boolean(youtube || spotify);
+  const hasLinks = Boolean(instagram || youtube || spotify);
 
   return (
     <section>
       <h1 className="page-kicker">BE IN TOUCH</h1>
       <NewsletterForm />
-      {hasListen ? (
+      {hasLinks ? (
         <div className="links" style={{ marginTop: 40 }}>
+          {instagram ? (
+            <a href={instagram} rel="noreferrer" target="_blank">
+              Instagram
+            </a>
+          ) : null}
           {youtube ? (
             <a href={youtube} rel="noreferrer" target="_blank">
               YouTube
@@ -29,11 +35,7 @@ export default async function TouchPage() {
         </div>
       ) : (
         <p className="empty" style={{ marginTop: 40 }}>
-          Sound lives on{" "}
-          <Link href="/find-us">Find us</Link>
-          {content.soundcloud.trim()
-            ? " — SoundCloud is up. YouTube and Spotify TBA."
-            : "."}
+          Sound lives on <Link href="/find-us">Find us</Link>.
         </p>
       )}
     </section>
