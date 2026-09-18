@@ -1,0 +1,14 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: "/contact", destination: "/touch", permanent: true },
+      { source: "/newsletter", destination: "/touch", permanent: true },
+      { source: "/listen", destination: "/find-us", permanent: true },
+      { source: "/music", destination: "/find-us", permanent: true },
+    ];
+  },
+};
+
+export default nextConfig;

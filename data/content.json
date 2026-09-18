@@ -1,0 +1,64 @@
+{
+  "bookingEmail": "booking@samevein.band",
+  "ticker": [
+    "Brooklyn five-piece · est. 2025",
+    "Punk grit, jazz-soul harmony",
+    "Equal parts Sade and Siouxsie",
+    "Live first, then the record"
+  ],
+  "homeNote": "B — eyes — video\n\nslowly\n\nwashed out, french new wave style",
+  "youtube": "",
+  "spotify": "",
+  "soundcloud": "https://soundcloud.com/same-vein",
+  "merch": [
+    { "id": "muscle-tee", "name": "muscle tee", "price": "TBA", "image": "" },
+    { "id": "tank", "name": "tank", "price": "TBA", "image": "" }
+  ],
+  "shows": [
+    {
+      "id": "sultan-2026-05-20",
+      "title": "A Lovely Little Evening",
+      "date": "2026-05-20",
+      "time": "7:00 PM",
+      "venue": "The Sultan Room Rooftop",
+      "address": "234 Starr Street, Brooklyn, NY 11237",
+      "neighborhood": "Bushwick",
+      "with": ["Provider", "boyscoutmarie"],
+      "ticketsUrl": "https://donyc.com/events/2026/5/20/a-lovely-little-evening-with-same-vein-provider-and-boyscoutmarie-tickets",
+      "poster": "",
+      "age": "21+",
+      "price": "$20",
+      "note": "Presented by The Sultan Room."
+    },
+    {
+      "id": "mama-tried-2026-07-05",
+      "title": "Linnea’s Garden / Clone / Same Vein",
+      "date": "2026-07-05",
+      "time": "4:00 PM",
+      "venue": "Mama Tried",
+      "address": "787 3rd Avenue, Brooklyn, NY 11232",
+      "neighborhood": "Sunset Park",
+      "with": ["Linnea’s Garden", "Clone"],
+      "ticketsUrl": "https://mamatriedbk.com/upcoming-events/linneas-garden-clone-same-vein",
+      "poster": "",
+      "age": "All ages until late",
+      "price": "",
+      "note": "Sunday afternoon into evening."
+    },
+    {
+      "id": "sultan-2026-08-19",
+      "title": "Same Vein with BOYSCOUTMARIE and Provider",
+      "date": "2026-08-19",
+      "time": "7:00 PM",
+      "venue": "The Sultan Room Rooftop",
+      "address": "234 Starr Street, Brooklyn, NY 11237",
+      "neighborhood": "Bushwick",
+      "with": ["BOYSCOUTMARIE", "Provider"],
+      "ticketsUrl": "https://www.jambase.com/show/same-vein-the-sultan-room-rooftop-20260819",
+      "poster": "",
+      "age": "21+",
+      "price": "From $15",
+      "note": ""
+    }
+  ]
+}
