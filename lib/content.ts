@@ -78,7 +78,6 @@ export function isSiteContentShape(value: unknown): value is SiteContent {
   if (!value || typeof value !== "object") return false;
   const body = value as Record<string, unknown>;
   return (
-    Array.isArray(body.ticker) &&
     Array.isArray(body.merch) &&
     Array.isArray(body.shows) &&
     typeof body.bookingEmail === "string" &&

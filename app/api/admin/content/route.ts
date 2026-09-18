@@ -23,7 +23,7 @@ export async function PUT(request: Request) {
   const body = await request.json();
   if (!isSiteContentShape(body)) {
     return NextResponse.json(
-      { error: "ticker, merch, and shows must be arrays, with string fields." },
+      { error: "merch and shows must be arrays, with string fields." },
       { status: 400 },
     );
   }

@@ -133,39 +133,6 @@ export function AdminEditor({ initial }: { initial: SiteContent }) {
         />
       </label>
 
-      <h2 className="page-kicker">Ticker</h2>
-      {content.ticker.map((line, i) => (
-        <div className="row" key={i}>
-          <input
-            value={line}
-            onChange={(e) => {
-              const ticker = [...content.ticker];
-              ticker[i] = e.target.value;
-              setContent({ ...content, ticker });
-            }}
-          />
-          <button
-            type="button"
-            onClick={() =>
-              setContent({
-                ...content,
-                ticker: content.ticker.filter((_, j) => j !== i),
-              })
-            }
-          >
-            Remove
-          </button>
-        </div>
-      ))}
-      <button
-        type="button"
-        onClick={() =>
-          setContent({ ...content, ticker: [...content.ticker, ""] })
-        }
-      >
-        Add ticker line
-      </button>
-
       <h2 className="page-kicker">Merch</h2>
       {content.merch.map((item, i) => (
         <div className="admin-block" key={item.id}>

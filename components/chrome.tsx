@@ -10,15 +10,8 @@ const DOCK = [
   { href: "/shows", label: "SHOWS" },
 ] as const;
 
-type ChromeProps = {
-  ticker: string[];
-  children: ReactNode;
-};
-
-export function Chrome({ ticker, children }: ChromeProps) {
+export function Chrome({ children }: { children: ReactNode }) {
   const pathname = usePathname() || "/";
-  const items = ticker.length ? ticker : ["Same Vein"];
-  const loop = [...items, ...items];
   const merch = pathname === "/merch";
 
   return (
@@ -30,17 +23,6 @@ export function Chrome({ ticker, children }: ChromeProps) {
         <Link className="wordmark" href="/">
           same vein
         </Link>
-        <div className="ticker" aria-hidden={false}>
-          <div className="ticker__track">
-            {loop.map((line, index) => (
-              <div className="ticker__item" key={`${line}-${index}`}>
-                <span>{line}</span>
-                {/* width/height come from the SVG file; wrapper does not override the asset. */}
-                <img src="/ticker-arrow.svg" alt="" />
-              </div>
-            ))}
-          </div>
-        </div>
       </header>
       <main id="content" className="main">
         {children}
