@@ -211,6 +211,12 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .merch-card__frame {
@@ -231,6 +237,79 @@ body {
 .merch-card__price {
   font-size: var(--copy);
   margin: 0 0 8px;
+}
+
+.merch-dialog__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.merch-dialog {
+  position: fixed;
+  z-index: 61;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(440px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.merch-dialog__title {
+  font-size: var(--copy);
+  font-weight: 500;
+  margin: 0;
+}
+
+.merch-dialog__frame {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--media);
+  overflow: hidden;
+}
+
+.merch-dialog__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.merch-dialog__price,
+.merch-dialog__copy {
+  margin: 0;
+  font-size: 16px;
+}
+
+.merch-dialog__buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--copy);
+}
+
+.merch-dialog__close {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .empty {
@@ -498,15 +577,14 @@ body {
   }
 
   .dock {
-    gap: 12px;
-    padding: 16px;
+    gap: 8px;
+    padding: 14px 10px 18px;
   }
 
   .dock__link {
-    width: calc(50% - 12px);
-    min-width: 140px;
-    height: 56px;
-    font-size: 16px;
+    height: 48px;
+    font-size: 11px;
+    padding: 0 4px;
   }
 
   .show {
