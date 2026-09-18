@@ -2,7 +2,7 @@
 
 Public site for Same Vein — Brooklyn five-piece. Hosted on **Vercel**. Registrar and DNS stay on Vercel too.
 
-Wordmark, gray home placeholder, and a four-item dock (Newsletter / Merch / Shows / Listen) follow the Figma public chrome. The home “eyes” video is still a gray box on purpose; the note lives in `data/content.json`.
+Wordmark, gray home placeholder, and a four-item dock (Newsletter / Merch / Shows / Listen) follow the Figma public chrome. The home “eyes” video is still a gray box on purpose; the note lives in `data/content.json`. After 15 seconds idle, a TV overlay pops with a music-video placeholder (`tvNote` / later `tvVideo`).
 
 ## Local
 

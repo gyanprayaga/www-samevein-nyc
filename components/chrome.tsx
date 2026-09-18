@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { IdleTv } from "@/components/idle-tv";
 
 const DOCK = [
   { href: "/touch", label: "NEWSLETTER" },
@@ -13,9 +14,13 @@ const DOCK = [
 
 export function Chrome({
   instagram,
+  tvVideo,
+  tvNote,
   children,
 }: {
   instagram: string;
+  tvVideo: string;
+  tvNote: string;
   children: ReactNode;
 }) {
   const pathname = usePathname() || "/";
@@ -60,6 +65,7 @@ export function Chrome({
           );
         })}
       </nav>
+      <IdleTv video={tvVideo} note={tvNote} />
     </div>
   );
 }

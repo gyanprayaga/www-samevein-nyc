@@ -28,6 +28,8 @@ export type SiteContent = {
   youtube: string;
   spotify: string;
   soundcloud: string;
+  tvVideo: string;
+  tvNote: string;
   merch: MerchItem[];
   shows: Show[];
 };

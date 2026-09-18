@@ -85,6 +85,8 @@ export function isSiteContentShape(value: unknown): value is SiteContent {
     typeof body.instagram === "string" &&
     typeof body.youtube === "string" &&
     typeof body.spotify === "string" &&
-    typeof body.soundcloud === "string"
+    typeof body.soundcloud === "string" &&
+    typeof body.tvVideo === "string" &&
+    typeof body.tvNote === "string"
   );
 }

@@ -133,6 +133,20 @@ export function AdminEditor({ initial }: { initial: SiteContent }) {
         />
       </label>
 
+      <label>
+        Idle TV note
+        <textarea
+          value={content.tvNote}
+          onChange={(e) => setContent({ ...content, tvNote: e.target.value })}
+        />
+      </label>
+      <label>
+        Idle TV video URL
+        <input
+          value={content.tvVideo}
+          onChange={(e) => setContent({ ...content, tvVideo: e.target.value })}
+        />
+      </label>
       <h2 className="page-kicker">Merch</h2>
       {content.merch.map((item, i) => (
         <div className="admin-block" key={item.id}>
