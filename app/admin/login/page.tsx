@@ -30,7 +30,7 @@ export default function AdminLoginPage() {
   return (
     <section className="login">
       <h1 className="page-kicker">Admin</h1>
-      <form onSubmit={onSubmit}>
+      <form method="post" onSubmit={onSubmit}>
         <label>
           Password
           <input
