@@ -110,15 +110,6 @@ export function AdminEditor({ initial }: { initial: SiteContent }) {
         />
       </label>
       <label>
-        SoundCloud
-        <input
-          value={content.soundcloud}
-          onChange={(e) =>
-            setContent({ ...content, soundcloud: e.target.value })
-          }
-        />
-      </label>
-      <label>
         YouTube
         <input
           value={content.youtube}

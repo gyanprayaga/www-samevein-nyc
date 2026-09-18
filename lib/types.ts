@@ -27,7 +27,6 @@ export type SiteContent = {
   instagram: string;
   youtube: string;
   spotify: string;
-  soundcloud: string;
   tvVideo: string;
   tvNote: string;
   merch: MerchItem[];

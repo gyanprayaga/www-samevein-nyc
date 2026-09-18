@@ -5,7 +5,6 @@ export const metadata = { title: "Listen" };
 export default async function FindUsPage() {
   const content = await getContent();
   const instagram = content.instagram.trim();
-  const soundcloud = content.soundcloud.trim();
   const youtube = content.youtube.trim();
   const spotify = content.spotify.trim();
 
@@ -33,13 +32,6 @@ export default async function FindUsPage() {
           </a>
         ) : (
           <p className="tba">Spotify TBA</p>
-        )}
-        {soundcloud ? (
-          <a href={soundcloud} rel="noreferrer" target="_blank">
-            SoundCloud
-          </a>
-        ) : (
-          <p className="tba">SoundCloud TBA</p>
         )}
       </div>
     </section>
