@@ -5,9 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const DOCK = [
-  { href: "/touch", label: "BE IN TOUCH" },
+  { href: "/touch", label: "NEWSLETTER" },
   { href: "/merch", label: "MERCH" },
   { href: "/shows", label: "SHOWS" },
+  { href: "/find-us", label: "LISTEN" },
 ] as const;
 
 export function Chrome({
