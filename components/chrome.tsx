@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { IdleTv } from "@/components/idle-tv";
 
 const DOCK = [
-  { href: "/touch", label: "NEWSLETTER" },
+  { href: "/newsletter", label: "NEWSLETTER" },
   { href: "/merch", label: "MERCH" },
   { href: "/shows", label: "SHOWS" },
   { href: "/find-us", label: "LISTEN" },

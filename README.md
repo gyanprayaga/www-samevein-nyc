@@ -30,7 +30,7 @@ No Postgres. No Clerk. No OAuth. No user table.
 
 ## Newsletter (Buttondown)
 
-`/touch` uses a custom form (no embed). Join posts to a server action and to `POST /api/newsletter` (also re-exported at `/api/subscribe`).
+`/newsletter` uses a custom form (no embed). Join posts to a server action and to `POST /api/newsletter` (also re-exported at `/api/subscribe`).
 
 - Double opt-in: subscribers are created as `unactivated`. They are not on the list until they confirm the email.
 - Honeypot field `company` is in the DOM, visually off-screen. A filled honeypot returns success copy and never calls Buttondown.

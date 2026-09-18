@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   agentRules: false,
   async redirects() {
     return [
-      { source: "/contact", destination: "/touch", permanent: true },
-      { source: "/newsletter", destination: "/touch", permanent: true },
+      { source: "/contact", destination: "/newsletter", permanent: true },
+      { source: "/touch", destination: "/newsletter", permanent: true },
       { source: "/listen", destination: "/find-us", permanent: true },
       { source: "/music", destination: "/find-us", permanent: true },
     ];

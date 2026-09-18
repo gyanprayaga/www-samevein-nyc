@@ -60,8 +60,8 @@ export default async function ShowsPage() {
       <section>
         <h1 className="page-kicker">SHOWS</h1>
         <p className="empty">
-          Nothing on the books. We’ll list dates here and on{" "}
-          <Link href="/touch">Be in touch</Link>.
+          Nothing on the books. We’ll list dates here and on the{" "}
+          <Link href="/newsletter">newsletter</Link>.
         </p>
       </section>
     );
@@ -76,7 +76,7 @@ export default async function ShowsPage() {
           upcoming.map((show) => <ShowCard key={show.id} show={show} />)
         ) : (
           <p className="empty">
-            No upcoming dates. Watch Be in touch for the next one.
+            No upcoming dates. Watch the newsletter for the next one.
           </p>
         )}
       </div>

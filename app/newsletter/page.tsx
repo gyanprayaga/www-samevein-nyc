@@ -2,9 +2,9 @@ import Link from "next/link";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { getContent } from "@/lib/content";
 
-export const metadata = { title: "Be in touch" };
+export const metadata = { title: "Newsletter" };
 
-export default async function TouchPage() {
+export default async function NewsletterPage() {
   const content = await getContent();
   const instagram = content.instagram.trim();
   const youtube = content.youtube.trim();
@@ -13,7 +13,7 @@ export default async function TouchPage() {
 
   return (
     <section>
-      <h1 className="page-kicker">BE IN TOUCH</h1>
+      <h1 className="page-kicker">NEWSLETTER</h1>
       <NewsletterForm />
       {hasLinks ? (
         <div className="links" style={{ marginTop: 40 }}>
