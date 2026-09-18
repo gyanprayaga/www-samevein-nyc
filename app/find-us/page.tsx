@@ -1,6 +1,6 @@
 import { getContent } from "@/lib/content";
 
-export const metadata = { title: "Find us" };
+export const metadata = { title: "Listen" };
 
 export default async function FindUsPage() {
   const content = await getContent();
@@ -11,7 +11,7 @@ export default async function FindUsPage() {
 
   return (
     <section>
-      <h1 className="page-kicker">FIND US</h1>
+      <h1 className="page-kicker">LISTEN</h1>
       <div className="links">
         {instagram ? (
           <a href={instagram} rel="noreferrer" target="_blank">

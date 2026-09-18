@@ -28,11 +28,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className={inter.className}>
-        <Chrome
-          instagram={content.instagram}
-          tvVideo={content.tvVideo}
-          tvNote={content.tvNote}
-        >
+        <Chrome tvVideo={content.tvVideo} tvNote={content.tvNote}>
           {children}
         </Chrome>
       </body>

@@ -70,11 +70,6 @@ body {
   white-space: nowrap;
 }
 
-.header-ig {
-  font-size: var(--copy);
-  text-underline-offset: 4px;
-}
-
 .main {
   flex: 1;
   padding: 8px 64px 180px;

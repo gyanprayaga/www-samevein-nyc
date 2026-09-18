@@ -6,22 +6,16 @@ export const metadata = { title: "Newsletter" };
 
 export default async function NewsletterPage() {
   const content = await getContent();
-  const instagram = content.instagram.trim();
   const youtube = content.youtube.trim();
   const spotify = content.spotify.trim();
-  const hasLinks = Boolean(instagram || youtube || spotify);
+  const hasListen = Boolean(youtube || spotify);
 
   return (
     <section>
       <h1 className="page-kicker">NEWSLETTER</h1>
       <NewsletterForm />
-      {hasLinks ? (
+      {hasListen ? (
         <div className="links" style={{ marginTop: 40 }}>
-          {instagram ? (
-            <a href={instagram} rel="noreferrer" target="_blank">
-              Instagram
-            </a>
-          ) : null}
           {youtube ? (
             <a href={youtube} rel="noreferrer" target="_blank">
               YouTube
@@ -35,7 +29,7 @@ export default async function NewsletterPage() {
         </div>
       ) : (
         <p className="empty" style={{ marginTop: 40 }}>
-          Sound lives on <Link href="/find-us">Find us</Link>.
+          Sound lives on <Link href="/find-us">Listen</Link>.
         </p>
       )}
     </section>
